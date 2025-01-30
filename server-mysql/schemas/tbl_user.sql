@@ -1,0 +1,17 @@
+CREATE TABLE `tbl_user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(124) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `refresh_token` varchar(255) DEFAULT NULL,
+  `role` enum('librarian','student') NOT NULL DEFAULT 'student',
+  `perms` varchar(1024) DEFAULT 'like-book,get-transactions,process-dues,get-borrow-list,read-book,request-book,get-books,get-requests',
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `isDeleted` tinyint(1) NOT NULL DEFAULT 0,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `phoneno` char(20) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `username` (`email`),
+  'profile_image' VARCHAR(255) DEFAULT NULL,
+)          
