@@ -2,6 +2,8 @@
 
 This project is a full-stack Library Management System (LMS) designed to efficiently manage books, users, transactions, and reviews for a library. It features two user roles: Librarian and Student, with customized access and functionalities. The system supports real-time overdue penalties, book borrowing, user registration, and detailed reporting for librarians. This system is built using a combination of modern technologies including React, Node.js, Express, MySQL, and various other libraries.
 
+It's fully responsive and if you want to check other details see my **[portfolio](netlify.com)** and check project section and check this project's more details and screenshots.
+
 ---
 
 ## Technologies & Libraries Used
